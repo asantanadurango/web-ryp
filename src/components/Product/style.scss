@@ -1,0 +1,21 @@
+@import "/src/scss/variables.scss";
+
+.product {
+   color: $nameFoodColor;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   //    padding: 0 0.5rem;
+   margin: 0 0.3rem 3rem;
+   border-radius: 20px;
+   border: 10px solid red;
+
+   &__link {
+      max-width: 40vw;
+   }
+   &__img {
+      width: 100%;
+      object-fit: cover;
+      height: auto;
+   }
+}

@@ -1,0 +1,23 @@
+@import '/src/scss/variables.scss';
+
+.main-products
+{
+	padding: 1.8rem;
+}
+
+.foot-type
+{
+	color: lime;
+	width: 100%;
+	padding: 30px;
+	color:$typeFoodColor;
+}
+
+.product-section
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	// margin: 20px auto;
+}
