@@ -7,6 +7,7 @@ import "./style.scss";
 
 const getItemsByCategoryName = (categoryName) => {
 	if (!categoryName) return productList;
+	if (categoryName === "web-ryp") return productList;
 	return productList.filter((p) => p.category === categoryName) || [];
 };
 
