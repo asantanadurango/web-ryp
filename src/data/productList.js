@@ -2,73 +2,110 @@ const productList = [
    {
       category: "comidas",
       id: 0,
-      name: "picada",
-      img:
-         "https://media-cdn.tripadvisor.com/media/photo-s/0f/95/7a/96/picada-leoni-callejera.jpg",
-      price: "$1000",
-      descript: "lorem impsut bla bla bla",
+      name: "Picada De Carnes",
+      img: "https://images.pexels.com/photos/6607383/pexels-photo-6607383.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
    },
    {
       category: "bebidas",
       id: 1,
-      name: "jugo de mora",
-      img:
-         "https://cafamfloresta.com.co/wp-content/uploads/2020/09/Jugo20de20Mora.png",
-      price: "$2000",
-      descript: "lorem impsut bla bla bla",
+      name: "Jugo De Naranja",
+      img: "https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
    },
    {
       category: "comidas",
       id: 2,
-      name: "hamburguesa",
-      img:
-         "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2020/08/hamburguesa-2028707.jpg",
-      price: "$3000",
-      descript: "lorem impsut bla bla bla",
+      name: "Hamburguesa",
+      img: "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
    },
    {
       category: "bebidas",
       id: 3,
-      name: "cervezas",
-      img:
-         "https://i.pinimg.com/originals/22/43/c9/2243c90735faa6065cc952f8ae69daab.jpg",
-      price: "$4000",
-      descript: "lorem impsut bla bla bla",
+      name: "Cerveza",
+      img: "https://images.pexels.com/photos/5537957/pexels-photo-5537957.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
    },
    {
       category: "comidas",
       id: 4,
-      name: "punta de anca",
-      img:
-         "https://santacostilla.co/wp-content/uploads/2020/05/punta-de-anca-de-res.jpg",
-      price: "$5000",
-      descript: "lorem impsut bla bla bla",
+      name: "Brochetas",
+      img: "https://images.pexels.com/photos/5490366/pexels-photo-5490366.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
    },
    {
       category: "bebidas",
       id: 5,
-      name: "malteada",
-      img:
-         "https://i.pinimg.com/originals/72/d8/34/72d8341f5083d2a9b1d170c9dec29e97.png",
-      price: "$6000",
-      descript: "lorem impsut bla bla bla",
+      name: "Malteada",
+      img: "https://images.pexels.com/photos/4051780/pexels-photo-4051780.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
    },
    {
       category: "comidas",
       id: 6,
-      name: "churrasco",
-      img: "https://m.eltiempo.com/uploads/2017/06/05/593553edc995d.jpeg",
-      price: "$7000",
-      descript: "lorem impsut bla bla bla",
+      name: "Tentenpie",
+      img: "https://images.pexels.com/photos/416471/pexels-photo-416471.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
    },
    {
       category: "bebidas",
       id: 7,
-      name: "productos postobon",
-      img:
-         "https://chorisant.com/tienda/wp-content/uploads/2020/03/GaseosasPosto.jpg",
-      price: "$8000",
-      descript: "lorem impsut bla bla bla",
+      name: "Michelada",
+      img: "https://images.pexels.com/photos/2549275/pexels-photo-2549275.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
+   },
+   {
+      category: "comidas",
+      id: 8,
+      name: "Huevos Escalfados",
+      img: "https://images.pexels.com/photos/2122294/pexels-photo-2122294.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
+   },
+   {
+      category: "bebidas",
+      id: 9,
+      name: "Frappe",
+      img: "https://images.pexels.com/photos/214333/pexels-photo-214333.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
+   },
+   {
+      category: "comidas",
+      id: 10,
+      name: "Panqueques",
+      img: "https://images.pexels.com/photos/357573/pexels-photo-357573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
+   },
+   {
+      category: "bebidas",
+      id: 11,
+      name: "Cafe Tradicional",
+      img: "https://images.pexels.com/photos/3216564/pexels-photo-3216564.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      price: 4,
+      descript:
+         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt tenetur odit.",
    },
 ];
 

@@ -1,23 +1,47 @@
-@import '/src/scss/variables.scss';
+@import "/src/scss/variables.scss";
 
-.main-products
-{
-	padding: 1.8rem;
+.main-products {
+	margin-top: 5.1rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+
+	&::after,
+	&::before {
+		content: "";
+		position: fixed;
+		background: $primaryColor;
+		width: 400px;
+		height: 400px;
+		border-radius: 50%;
+		z-index: -1;
+	}
+
+	&::before {
+		top: 80px;
+		left: 20px;
+		opacity: 0.3;
+	}
+
+	&::after {
+		bottom: 0;
+		right: 35px;
+		opacity: 0.5;
+	}
 }
 
-.foot-type
-{
-	color: lime;
-	width: 100%;
-	padding: 30px;
-	color:$typeFoodColor;
-}
-
-.product-section
-{
+.product-section {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-content: center;
-	// margin: 20px auto;
+	max-width: 1240px;
+	margin: 0 7vw;
+	background: rgba(255, 255, 255, 0.4);
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	backdrop-filter: blur(5px);
 }

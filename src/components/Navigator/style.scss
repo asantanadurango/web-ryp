@@ -1,35 +1,49 @@
+@import "/src/scss/variables.scss";
+
 .header {
-   &__nav {
-      width: 100%;
-      height: 5rem;
-      display: flex;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      background-color: #5a0b0d;
-   }
+	color: $secondColor;
+	width: 100%;
+	height: 5rem;
+	background-color: #5a0b0d;
 
-   &__logo {
-      width: 25%;
-      height: 5rem;
-      text-align: center;
+	&__nav {
+		background-color: inherit;
+		width: 100%;
+		max-width: 1300px;
+		height: inherit;
+		display: flex;
+		align-items: center;
+		position: fixed;
+		left: 50%;
+		top: 0%;
+		transform: translate(-50%, 0);
+		z-index: 1000000;
+	}
 
-      & img {
-         width: 100%;
-         height: 100%;
-         object-fit: contain;
-      }
-   }
+	&__logo {
+		width: 25%;
+		text-align: center;
+		cursor: pointer;
+		max-height: 100%;
+		height: 100%;
 
-   &__ul {
-      width: 70%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-   }
+		& img {
+			object-fit: cover;
+			max-width: 100%;
+			border-radius: 40%;
+			max-height: 100%;
+		}
+	}
 
-   .nav-item {
-      padding: 0 15px;
-      text-transform: capitalize;
-   }
+	&__ul {
+		width: 70%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.nav-item {
+		padding: 0 15px;
+		text-transform: capitalize;
+	}
 }

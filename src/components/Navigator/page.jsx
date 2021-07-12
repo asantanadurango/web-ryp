@@ -4,37 +4,36 @@ import { generate as uniKey } from "shortid";
 import { productList } from "../../data/productList";
 import "./style.scss";
 
-import LOGO from "../../assets/logo.jpeg";
+function Navigator() {
+	return (
+		<header className='header'>
+			<nav className='header__nav'>
+				<a className='header__logo'>
+					<img
+						src='data:image/jpeg;base64,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'
+						alt='logo'
+					/>
+				</a>
 
-function page() {
-   return (
-      <header className='header'>
-         <nav className='header__nav'>
-            <a className='header__logo'>
-               <img src={LOGO} alt='' />
-            </a>
-
-            <ul className='header__ul'>
-               <li key={uniKey()}>
-                  <Link className='nav-item' to='/'>
-                     {"home".toUpperCase()}
-                  </Link>
-               </li>
-               {getItemsMenu().map((i) => (
-                  <li key={uniKey()}>
-                     <Link className='nav-item' to={`${i}`}>
-                        {i?.toUpperCase()}
-                     </Link>
-                  </li>
-               ))}
-            </ul>
-         </nav>
-      </header>
-   );
+				<ul className='header__ul'>
+					<li key={uniKey()}>
+						<Link className='nav-item' to='/'>
+							ALL
+						</Link>
+					</li>
+					{getItemsMenu().map((i) => (
+						<li key={uniKey()}>
+							<Link className='nav-item' to={`${i}`}>
+								{i?.toLocaleLowerCase() === "bebidas" ? <i className='bx bxs-drink'></i> : <i className='bx bxs-dish'></i>}
+							</Link>
+						</li>
+					))}
+				</ul>
+			</nav>
+		</header>
+	);
 }
 
-const getItemsMenu = (_) => [
-   ...new Set(productList.map((item) => item.category)),
-];
+const getItemsMenu = (_) => [...new Set(productList.map((item) => item.category))];
 
-export default page;
+export default Navigator;

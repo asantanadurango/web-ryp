@@ -1,30 +1,26 @@
 import React from "react";
-import "./style.scss";
-import ProductCard from "../Product/page";
-import { navigationItems } from "../../data/navigationItems";
-import { productList } from "../../data/productList";
+import { useParams } from "react-router-dom";
 import { generate as uniKey } from "shortid";
+import { productList } from "../../data/productList";
+import Product from "../Product/page";
+import "./style.scss";
 
-function page(props) {
-   console.log(navigationItems);
-   console.log(productList);
-   return (
-      <main className='main-products'>
-         {navigationItems.map((item) => (
-            <section className='product-section' key={uniKey()}>
-               <h1 className='foot-type'>{item}</h1>
-               {productList.map((product) => (
-                  <ProductCard
-                     productName={product.name}
-                     productImg={product.img}
-                     productDescript={product.descript}
-                     productPrice={product.price}
-                  />
-               ))}
-            </section>
-         ))}
-      </main>
-   );
+const getItemsByCategoryName = (categoryName) => {
+	if (!categoryName) return productList;
+	return productList.filter((p) => p.category === categoryName) || [];
+};
+
+function Main() {
+	let { categoryName } = useParams();
+	return (
+		<main className='main-products'>
+			<section className='product-section'>
+				{getItemsByCategoryName(categoryName).map((product) => (
+					<Product key={uniKey()} productName={product.name} productImg={product.img} productDescript={product.descript} productPrice={product.price} />
+				))}
+			</section>
+		</main>
+	);
 }
 
-export default page;
+export default Main;
